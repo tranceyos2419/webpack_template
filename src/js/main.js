@@ -1,4 +1,5 @@
 import * as run from './run';
+import '../css/style.css';
 
 run.exist();
 

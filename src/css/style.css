@@ -7,4 +7,5 @@ header #title {
   background-color: #1abb14; }
 
 body .container {
-  color: #525138; }
+  font-size: 0.2cm;
+  color: red; }

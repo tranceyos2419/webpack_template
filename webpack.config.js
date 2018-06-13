@@ -20,7 +20,11 @@ module.exports = {
                         presets: ['env', 'stage-0'] //how to compile js files
                     }
                 }
-            }
+            },
+            {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader' ]
+              }
         ]
     }
 };
