@@ -1,4 +1,5 @@
 const path = require('path');
+// const ReloadPlugin = require('reload-html-webpack-plugin');
 
 module.exports = {
     entry: [
@@ -23,21 +24,25 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [ 'style-loader', 'css-loader' ]
-              }
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.html$/,
+                loader: "raw-loader"
+            }
         ]
     }
 };
 
-            // {
-            //     test: /\.scss$/,
-            //     use: [
-            //         "style-loader", // creates style nodes from JS strings
-            //         "css-loader", // translates CSS into CommonJS
-            //         "sass-loader" // compiles Sass to CSS
-            //     ],
-            //     include: [
-            //         path.resolve(__dirname, 'node_modules'),
-            //         path.resolve(__dirname, 'path/to/imported/file/dir')
-            //     ]
-            // }
+// {
+//     test: /\.scss$/,
+//     use: [
+//         "style-loader", // creates style nodes from JS strings
+//         "css-loader", // translates CSS into CommonJS
+//         "sass-loader" // compiles Sass to CSS
+//     ],
+//     include: [
+//         path.resolve(__dirname, 'node_modules'),
+//         path.resolve(__dirname, 'path/to/imported/file/dir')
+//     ]
+// }

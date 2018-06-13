@@ -7,5 +7,7 @@ header #title {
   background-color: #1abb14; }
 
 body .container {
-  font-size: 0.2cm;
-  color: red; }
+  font-size: 0.4cm;
+  color: #320fcf;
+  margin: 20px 30px;
+  padding: 5px; }

@@ -1,6 +1,6 @@
 import * as run from './run';
 import '../css/style.css';
-
+import '../../views/index.html';
 run.exist();
 
 // import * as lib from './lib';
