@@ -9,7 +9,7 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
-    mode: 'production',
+    mode: 'none',
     module: {
         rules: [{
                 test: /\.js$/,
@@ -21,6 +21,10 @@ module.exports = {
                     }
                 }
             }
+        ]
+    }
+};
+
             // {
             //     test: /\.scss$/,
             //     use: [
@@ -33,6 +37,3 @@ module.exports = {
             //         path.resolve(__dirname, 'path/to/imported/file/dir')
             //     ]
             // }
-        ]
-    }
-}

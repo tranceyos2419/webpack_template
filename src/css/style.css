@@ -2,5 +2,6 @@ body {
   font-family: 'Sunflower', sans-serif; }
 
 header #title {
-  color: #0297ee93;
-  text-align: center; }
+  color: #f58bf5;
+  text-align: center;
+  background-color: #1abb14; }
