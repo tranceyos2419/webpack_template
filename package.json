@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "start": "webpack-dev-server --output-public-path=/dist/",
-    "onchange": "onchange \"src/scss/*.scss\" -- npm run scss",
+    "onchange": "onchange \"src/scss/**/*.scss\" -- npm run scss",
     "scss": "node-sass ./src/scss/style.scss -o ./src/css/",
     "watch:scss": "node-sass -w ./src/scss/ -o ./src/css/"
   },
