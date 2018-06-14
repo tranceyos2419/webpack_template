@@ -1,6 +1,4 @@
-node_modules
-src
-views
-package-lock.json
-dist
-.vscode
+*
+!webpack.config.js
+!README.md
+!packge.json
