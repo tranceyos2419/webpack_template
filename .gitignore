@@ -1,4 +1,2 @@
-*
-!webpack.config.js
-!README.md
-!packge.json
+dist/
+node_modules/
