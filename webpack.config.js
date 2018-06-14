@@ -1,10 +1,9 @@
 const path = require('path');
-// const ReloadPlugin = require('reload-html-webpack-plugin');
 
 module.exports = {
     entry: [
         'babel-polyfill', //for compiling js files more strongly
-        './src/js/main.js'
+        './src/js/app.js'
     ],
     output: {
         filename: 'bundle.js',
@@ -33,16 +32,3 @@ module.exports = {
         ]
     }
 };
-
-// {
-//     test: /\.scss$/,
-//     use: [
-//         "style-loader", // creates style nodes from JS strings
-//         "css-loader", // translates CSS into CommonJS
-//         "sass-loader" // compiles Sass to CSS
-//     ],
-//     include: [
-//         path.resolve(__dirname, 'node_modules'),
-//         path.resolve(__dirname, 'path/to/imported/file/dir')
-//     ]
-// }
